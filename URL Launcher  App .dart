@@ -1,3 +1,8 @@
+dependencies:
+  cupertino_icons: ^1.0.2
+  url_launcher: ^6.1.7  // ADD this package in your Flutter Project 
+                       // AAD the required permissions in your Flutter project
+
 import 'package:url_launcher/url_launcher.dart';
 import 'package:url_launcher/url_launcher_string.dart';
 import 'package:flutter/material.dart';
