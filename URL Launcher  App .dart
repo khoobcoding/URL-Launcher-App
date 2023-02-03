@@ -76,7 +76,7 @@ class _UrllauncherState extends State<Urllauncher> {
                 String body = "Successfull";
                 String emailurl =
                     'mailto:example@gmail.com?subject=$subject&body=$body';
-                if (await launchUrlString(emailurl)) {
+                if (await canlaunchUrlString(emailurl)) {
                   launchUrlString(emailurl);
                 } else {
                   print("can't launch $emailurl");
@@ -91,7 +91,7 @@ class _UrllauncherState extends State<Urllauncher> {
                 String latitude = '42.3540';
                 String longitude = '71.0586';
                 String geourl = 'geo:$latitude,$longitude';
-                if (await launchUrlString(geourl)) {
+                if (await canlaunchUrlString(geourl)) {
                   launchUrlString(geourl);
                 } else {
                   print("can't launch $geourl");
